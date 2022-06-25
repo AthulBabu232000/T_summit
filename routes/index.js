@@ -16,22 +16,23 @@ router.get('/user/registered',function(req,res){
 router.post('/summitform',function(req,res){
   console.log("submitting form is working here at summit form");
   var flag=0;
-  const college=req.body.college;
-  const location=req.body.location;
-  const d1Name=req.body.delegateonename;
-  const d1Email=req.body.delegateonemail;
-  const d1phno=req.body.delegateonephno;
-  const d2Name=req.body.delegatetwoname;
-  const d2Email=req.body.delegatetwomail;
-  const d2phno=req.body.delegatetwophno;
-  const d3Name=req.body.delegatethreename;
-  const d3Email=req.body.delegatethreemail;
-  const d3phno=req.body.delegatethreephno;
-  const d4Name=req.body.delegatefourname;
-  const d4Email=req.body.delegatefourmail;
-  const d4phno=req.body.delegatefourphno;
+  var college=req.body.college,
+  location=req.body.location,
+  d1Name=req.body.delegateonename,
+  d1Email=req.body.delegateonemail,
+  d1phno=req.body.delegateonephno,
+  d2Name=req.body.delegatetwoname,
+  d2Email=req.body.delegatetwomail,
+  d2phno=req.body.delegatetwophno,
+  d3Name=req.body.delegatethreename,
+  d3Email=req.body.delegatethreemail,
+  d3phno=req.body.delegatethreephno,
+  d4Name=req.body.delegatefourname,
+  d4Email=req.body.delegatefourmail,
+  d4phno=req.body.delegatefourphno;
   (d1phno==d2phno || d2phno==d3phno || d1phno==d2phno)?flag=1:flag=0;
   (d1Email==d2Email || d2Email==d3Email || d1Email==d2Email)?flag=1:flag=0;
+  flag==1?res.render('/user/index',{flag:1}):res.render('/user/index',{flag:0});
  
   tsummit.create({
 
