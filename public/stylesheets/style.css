@@ -61,13 +61,14 @@ color:#1FA2FF !important;
 .img1, .img2, .img3{
   height:200px;
   width:200px;
-  background-color:white;
+  background-color:#000;
   border-radius:50%;
   margin: 0 auto;
   display:flex;
   overflow:hidden;
   justify-content:center;
   align-items: center;
+  border:10px solid #1FA2FF;
 }
 .btn,.card:before {
   background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
@@ -172,14 +173,29 @@ label{
   margin-top:30px;
 }
 figure, figcaption{
-background:transparent !important;
-
-  background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%) !important;
+/* background:transparent !important; */
+display:flex;
+justify-content:center;
+align-items: center;
+background-color:#000 !important;
+  /* background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%) !important; */
 }
 
 @media only screen and (max-width:500px) {
   
   .card-1,.card-2,.card-3,.card-4{
       margin-top:70px;
+  }
+  .img1, .img2, .img3{
+    height:100px;
+    width:100px;
+    background-color:#000;
+    border-radius:50%;
+    margin: 0 auto;
+    display:flex;
+    overflow:hidden;
+    justify-content:center;
+    align-items: center;
+    border:8px solid #1FA2FF;
   }
 }

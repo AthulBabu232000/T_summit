@@ -12,33 +12,52 @@
         <a class="navbar-brand" href="#">T Summit 2022</a>
       </div>
     </nav>
-    <div class="container-fluid p-md-5 p-4">
+    {{!-- <div class="container-fluid p-md-5 p-4">
+      {{#if flag==1}}
+
+  <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading"></h4>
+        <p></p>
+        <p class="mb-0"></p>
+      </div>
+      {{else}}
+
+
+      {{/if}} --}}
+    
       <div class="container-fluid p-md-4 p-5 header-section">
         <div class="img-container mx-auto">
           <div class="img-wrapper row mx-auto">
-            <div class="img1 col-md-4 mx-auto">
+            <div class="img1 col-md-4 mx-auto col-5">
               <figure class="imghvr-zoom-out-flip-vert">
                 <img
-                  src="https://static.remove.bg/remove-bg-web/913b22608288cd03cc357799d0d4594e2d1c6b41/assets/start-1abfb4fe2980eabfbbaaa4365a0692539f7cd2725f324f904565a9a744f8e214.jpg"
+                  src="https://iste-tkmce.github.io/TOOLS/athena_blue.png"
                   class=""
                   alt="example-image"
                 />
                 <figcaption class="">
-                  <h3 class="ih-fade-down ih-delay-sm">Oscar Wilde</h3>
-                  <p class="ih-zoom-in ih-delay-md">
-                    <i
-                      >"I have the simplest tastes, I am always satisfied with
-                      the best."</i
-                    >
-                  </p>
-                  <a class="ih-fade-up ih-delay-lg button" href="#"
-                    >Read More</a
-                  >
+                 
+                  <a class="ih-fade-up ih-delay-lg align-middle d-flex align-items-center justify-content-center" href="#"
+                    >Read More</a>
                 </figcaption>
                 <a href="#"></a>
               </figure>
             </div>
-            <div class="img2 col-md-4"></div>
+            <div class="img2 col-md-4 col-5">
+               <figure class="imghvr-zoom-out-flip-vert">
+                <img
+                  src="https://iste-tkmce.github.io/TOOLS/athena_blue.png"
+                  class=""
+                  alt="example-image"
+                />
+                <figcaption class="">
+                 
+                  <a class="ih-fade-up ih-delay-lg text-center d-flex justify-content-center align-items-center" href="#"
+                    >Read More</a>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </div>
           </div>
 
           <div class="tagline text-center mx-auto mt-4">
@@ -335,5 +354,38 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <script>
+
+  var flag=0;
+  const college=document.getElementById("college").value,
+   location=document.getElementById("location").value,
+   d1Name=document.getElementById("delegateonename").value,
+   d1Email=document.getElementById("delegateonemail").value,
+   d1phno=document.getElementById("delegateonephno").value,
+   d2Name=document.getElementById("delegatetwoname").value,
+   d2Email=document.getElementById("delegatetwomail").value,
+   d2phno=document.getElementById("delegatetwophno").value, 
+   d3Name=document.getElementById("delegatethreename").value,
+   d3Email=document.getElementById("delegatethreemail").value,
+   d3phno=document.getElementById("delegatethreephno").value,
+   d4Name=document.getElementById("delegatefourname").value,
+   d4Email=document.getElementById("delegatefourmail").value,
+   d4phno=document.getElementById("delegatefourphno").value,
+   console.log(d4phno);
+   input=document.querySelectorAll("input").value;
+   console.log(input);
+   input.forEach(e=>{
+    e.addEventListener('mouseenter',function(){
+      console.log("mousendown is working")
+  (d1phno==d2phno || d2phno==d3phno || d1phno==d2phno)?flag=1:flag=0;
+  (d1Email==d2Email || d2Email==d3Email || d1Email==d2Email)?flag=1:flag=0;
+  flag==1?alert("enter different mailid or phone number or name");
+    })
+   })
+
+  
+
+    </script>
   </body>
 </html>

@@ -5,6 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var hbs=require('express-handlebars');
 var indexRouter = require('./routes/index');
+const db = require("./models");
+const { tsummit } = require('./models');
 // var usersRouter = require('./routes/users');
 
 var app = express();
