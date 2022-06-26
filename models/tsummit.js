@@ -38,6 +38,7 @@ module.exports = (sequelize, DataTypes) => {
     delegateonemail: {
       type: DataTypes.STRING,
       allowNull:false,
+      unique: true,
       validate:{
         notEmpty : true
       }
@@ -90,27 +91,22 @@ module.exports = (sequelize, DataTypes) => {
       validate:{
         notEmpty : true
       }
+   
     },
     delegatefourname: {
       type: DataTypes.STRING,
       allowNull:true,
-      validate:{
-        notEmpty : true
-      }
+      
     },
     delegatefourmail: {
       type: DataTypes.STRING,
       allowNull:true,
-      validate:{
-        notEmpty : true
-      }
+     
     },
     delegatefourphno: {
       type: DataTypes.STRING,
       allowNull:true,
-      validate:{
-        notEmpty : true
-      }
+     
       
     },
 

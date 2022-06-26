@@ -1,352 +1,247 @@
-
-    <nav
-      class="navbar navbar-expand-lg navbar-light"
-      style="
+<nav class="navbar navbar-expand-lg navbar-light" style="
         background-color: transparent;
         position: fixed;
         z-index: 2;
         width: 100%;
-      "
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">T Summit 2022</a>
-      </div>
-    </nav>
-    <div class="container-fluid p-md-5 p-4">
-      {{#if flag}}
+      ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">T Summit 2022</a>
+  </div>
+</nav>
+<div class="container-fluid p-md-5 p-4">
+  {{!-- {{#if flag}}
 
   <div class="alert alert-success" role="alert">
-        <h4 class="alert-heading">cannot repeat mail id and phone number</h4>
-        <p></p>
-        <p class="mb-0"></p>
-      </div>
-      {{else}}
- <div class="alert alert-success" role="alert">
-        <h4 class="alert-heading">go with what you have</h4>
-        <p></p>
-        <p class="mb-0"></p>
-      </div>
+    <h4 class="alert-heading">cannot repeat mail id and phone number</h4>
+    <p></p>
+    <p class="mb-0"></p>
+  </div>
+  {{else}}
+  <div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">go with what you have</h4>
+    <p></p>
+    <p class="mb-0"></p>
+  </div>
 
-      {{/if}}
-    
-      <div class="container-fluid p-md-4 p-5 header-section">
-        <div class="img-container mx-auto">
-          <div class="img-wrapper row mx-auto">
-            <div class="img1 col-md-4 mx-auto col-5">
-              <figure class="imghvr-zoom-out-flip-vert">
-                <img
-                  src="https://iste-tkmce.github.io/TOOLS/athena_blue.png"
-                  class=""
-                  alt="example-image"
-                />
-                <figcaption class="">
-                 
-                    <img
-                  src="https://iste-tkmce.github.io/TOOLS/iste_blue.png"
-                  class=""
-                  alt="example-image"
-                />
-                </figcaption>
-                <a href="#"></a>
-              </figure>
-            </div>
-          
-          </div>
+  {{/if}}
+  --}}
+  <div class="container-fluid p-md-4 p-5 header-section">
+    <div class="img-container mx-auto">
+      <div class="img-wrapper row mx-auto">
+        <div class="img1 col-md-4 mx-auto col-5">
+          <figure class="imghvr-zoom-out-flip-vert">
+            <img src="https://iste-tkmce.github.io/TOOLS/athena_blue.png" class="" alt="example-image" />
+            <figcaption class="">
 
-          <div class="tagline text-center mx-auto mt-4">
-            <h4>Welcome to T Summit</h4>
-          </div>
-
-          <div class="btn-wrapper text-center mx-auto mt-4">
-            <button class="btn mx-auto">Let's meet</button>
-          </div>
+              <img src="https://iste-tkmce.github.io/TOOLS/iste_blue.png" class="img-fluid img-responsive"
+                alt="example-image" />
+            </figcaption>
+            <a href="#"></a>
+          </figure>
         </div>
+
       </div>
 
-      <section class="section1">
-        <form method="post" action="/summitform">
-        
-
-          <div class="row mx-auto">
-            <div class="col-md-6 mx-auto">
-              <div class="card">
-                <div class="form-outline mb-4">
-                  <label class="form-label text-capitalize" for="college"
-                    >college</label
-                  >
-                  <input
-                    value="mealone"
-                    required
-                    type="text"
-                    id="college"
-                    name="college"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 mx-auto">
-              <div class="card">
-                <div class="form-outline mb-4">
-                  <label class="form-label text-capitalize" for="location"
-                    >location</label
-                  >
-                  <input
-                    value="mealone"
-                    required
-                    type="text"
-                    id="location"
-                    name="location"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="section-breaker"></div> -->
-
-         
-          <div class="row mx-auto">
-            <div class="col-md-6 mx-auto">
-              <div class="card pt-5 card-1">
-                <div class="form-outline mb-4">
-                  <label
-                    class="form-label text-capitalize"
-                    for="delegateonename"
-                    >Name</label
-                  >
-                  <input
-                    value="mealone"
-                    required
-                    type="text"
-                    id="delegateonename"
-                    name="delegateonename"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-
-                <div class="form-outline mb-4">
-                  <label
-                    class="form-label text-capitalize"
-                    for="delegateonemail"
-                    >Email</label
-                  >
-                  <input
-                    value="mealone"
-                    required
-                    type="email"
-                    id="delegateonemail"
-                    name="delegateonemail"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-
-                <div class="form-outline mb-4">
-                  <label
-                    class="form-label text-capitalize"
-                    for="delegateonephno"
-                    >Mobile</label
-                  >
-                  <input
-                    value="mealone"
-                    required
-                    type="text"
-                    id="delegateonephno"
-                    name="delegateonephno"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 mx-auto">
-              <div class="card pt-5 card-2">
-                <div class="form-outline mb-4">
-                  <label
-                    class="form-label text-capitalize"
-                    for="delegatetwoname"
-                    >Name</label
-                  >
-                  <input
-                    value="mealone"
-                    required
-                    type="text"
-                    id="delegatetwoname"
-                    name="delegatetwoname"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-
-                <div class="form-outline mb-4">
-                  <label
-                    class="form-label text-capitalize"
-                    for="delegatetwomail"
-                    >Email</label
-                  >
-                  <input
-                    value="mealone"
-                    required
-                    type="email"
-                    id="delegatetwomail"
-                    name="delegatetwomail"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-
-                <div class="form-outline mb-4">
-                  <label
-                    class="form-label text-capitalize"
-                    for="delegatetwophno"
-                    >Mobile</label
-                  >
-                  <input
-                    value="mealone"
-                    required
-                    type="text"
-                    id="delegatetwophno"
-                    name="delegatetwophno"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row mx-auto">
-            <div class="col-md-6 mx-auto">
-              <div class="card pt-5 card-3">
-                <div class="form-outline mb-4">
-                  <label
-                    class="form-label text-capitalize"
-                    for="delegatethreename"
-                    >Name</label
-                  >
-                  <input
-                    value="mealone"
-                    required
-                    type="text"
-                    id="delegatethreename"
-                    name="delegatethreename"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-
-                <div class="form-outline mb-4">
-                  <label
-                    class="form-label text-capitalize"
-                    for="delegatethreemail"
-                    >Email</label
-                  >
-                  <input
-                    value="mealone"
-                    required
-                    type="email"
-                    id="delegatethreemail"
-                    name="delegatethreemail"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-
-                <div class="form-outline mb-4">
-                  <label
-                    class="form-label text-capitalize"
-                    for="delegatethreephno"
-                    >Mobile</label
-                  >
-                  <input
-                    value="mealone"
-                    required
-                    type="text"
-                    id="delegatethreephno"
-                    name="delegatethreephno"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 mx-auto">
-              <div class="card card-4 pt-5">
-                <div class="form-outline mb-4">
-                  <label
-                    class="form-label text-capitalize"
-                    for="delegatefourname"
-                    >Name</label
-                  >
-                  <input
-                    value="mealone"
-                    required
-                    type="text"
-                    id="delegatefourname"
-                    name="delegatefourname"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-
-                <div class="form-outline mb-4">
-                  <label
-                    class="form-label text-capitalize"
-                    for="delegatefourmail"
-                    >Email</label
-                  >
-                  <input
-                    value="mealone"
-                    required
-                    type="email"
-                    id="delegatefourmail"
-                    name="delegatefourmail"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-
-                <div class="form-outline mb-4">
-                  <label
-                    class="form-label text-capitalize"
-                    for="delegatefourphno"
-                    >Mobile</label
-                  >
-                  <input
-                    value="mealone"
-                    required
-                    type="text"
-                    id="delegatefourphno"
-                    name="delegatefourphno"
-                    class="form-control form-control-lg"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-       <div class="row mx-auto why">
-      <div class="col">
-        <div class="card">
-            <div class="form-outline mb-4">
-                <label class="form-label text-capitalize" for="whysummit"
-                  >What Agendas would your chapter like the Summit to discuss on
-                </label>
-                <textarea
-                  required
-                  type="text"
-                  id="whysummit"
-                  name="whysummit"
-                  class="form-control form-control-lg mt-3"
-                  placeholder="For instance, Strengthening ISTE inter-chapter relations and working towards developing a skilled student community."
-                ></textarea>
-              </div>
-        </div>
+      <div class="tagline text-center mx-auto mt-4">
+        <h4>Welcome to T Summit</h4>
       </div>
-       </div>
 
-          <div class="pt-1 mb-4 d-flex justify-content-end">
-            <button class="btn" type="submit">Submit</button>
-          </div>
-        </form>
-      </section>
+      <div class="btn-wrapper text-center mx-auto mt-4">
+        <button class="btn mx-auto">Let's meet</button>
+      </div>
     </div>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  <section class="section1">
+    <form method="post" action="/summitform" id="summit-form">
 
-  </body>
+
+      <div class="row mx-auto">
+        <div class="col-md-6 mx-auto">
+          <div class="card">
+            <div class="form-outline mb-4">
+              <label class="form-label text-capitalize" for="college">college</label>
+              <input value="" required type="text" id="college" name="college" class="form-control form-control-lg" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mx-auto">
+          <div class="card">
+            <div class="form-outline mb-4">
+              <label class="form-label text-capitalize" for="location">location</label>
+              <input value="" required type="text" id="location" name="location" class="form-control form-control-lg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="section-breaker"></div> -->
+
+
+      <div class="row mx-auto">
+        <div class="col-md-6 mx-auto">
+          <div class="card pt-5 card-1">
+            <div class="form-outline mb-4">
+              <label class="form-label text-capitalize" for="delegateonename">Name</label>
+              <input value="" required type="text" id="delegateonename" name="delegateonename"
+                class="form-control form-control-lg" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label text-capitalize" for="delegateonemail">Email</label>
+              <input value="" required type="email" id="delegateonemail" name="delegateonemail"
+                class="form-control form-control-lg" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label text-capitalize" for="delegateonephno">Mobile</label>
+              <input value="" required type="text" id="delegateonephno" name="delegateonephno"pattern="[6789][0-9]{9}" 
+                class="form-control form-control-lg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mx-auto">
+          <div class="card pt-5 card-2">
+            <div class="form-outline mb-4">
+              <label class="form-label text-capitalize" for="delegatetwoname">Name</label>
+              <input value="" required type="text" id="delegatetwoname" name="delegatetwoname"
+                class="form-control form-control-lg" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label text-capitalize" for="delegatetwomail">Email</label>
+              <input value="" required type="email" id="delegatetwomail" name="delegatetwomail"
+                class="form-control form-control-lg" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label text-capitalize" for="delegatetwophno">Mobile</label>
+              <input value="" required type="text" id="delegatetwophno" name="delegatetwophno"pattern="[6789][0-9]{9}" 
+                class="form-control form-control-lg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mx-auto">
+        <div class="col-md-6 mx-auto">
+          <div class="card pt-5 card-3">
+            <div class="form-outline mb-4">
+              <label class="form-label text-capitalize" for="delegatethreename">Name</label>
+              <input value="" required type="text" id="delegatethreename" name="delegatethreename"
+                class="form-control form-control-lg" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label text-capitalize" for="delegatethreemail">Email</label>
+              <input value="" required type="email" id="delegatethreemail" name="delegatethreemail"
+                class="form-control form-control-lg" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label text-capitalize" for="delegatethreephno">Mobile</label>
+              <input value="" required type="text" id="delegatethreephno" name="delegatethreephno"pattern="[6789][0-9]{9}" 
+                class="form-control form-control-lg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mx-auto">
+          <div class="card card-4 pt-5">
+            <div class="form-outline mb-4">
+              <label class="form-label text-capitalize" for="delegatefourname">Name</label>
+              <input value=""  type="text" id="delegatefourname" name="delegatefourname"
+                class="form-control form-control-lg" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label text-capitalize" for="delegatefourmail">Email</label>
+              <input value=""  type="email" id="delegatefourmail" name="delegatefourmail"
+                class="form-control form-control-lg" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label text-capitalize" for="delegatefourphno">Mobile</label>
+              <input value=""  type="text" id="delegatefourphno" name="delegatefourphno"pattern="[6789][0-9]{9}" 
+                class="form-control form-control-lg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mx-auto why">
+        <div class="col">
+          <div class="card">
+            <div class="form-outline mb-4">
+              <label class="form-label text-capitalize" for="whysummit">What Agendas would your chapter like the Summit
+                to discuss on
+              </label>
+              <textarea required type="text" id="whysummit" name="whysummit" class="form-control form-control-lg mt-3"
+                placeholder="For instance, Strengthening ISTE inter-chapter relations and working towards developing a skilled student community."></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-1 mb-4 d-flex justify-content-end">
+        <button class="btn" id="submit-btn" disabled="true" type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
+</div>
+
+<script>
+  function nonEmpty() {
+    const input = document.querySelectorAll("input");
+    var flag = 0;
+    for (let i = 0; i <= 10; i++) {
+      if (input[i].value.length == 0) {
+        flag = 1;
+      } else {
+        flag = 0;
+      }
+
+      if (flag == 1) {
+        break;
+      }
+    }
+    return flag;
+  }
+  const repeatChecker = (e) => {
+    var n1 = document.getElementById('delegateonemail'),
+      n2 = document.getElementById('delegatetwomail'),
+      n3 = document.getElementById('delegatethreemail');
+    var p1 = document.getElementById("delegateonephno"),
+      p2 = document.getElementById('delegatetwophno'),
+      p3 = document.getElementById('delegatethreephno'),
+      btn = document.getElementById("submit-btn");
+    console.log(btn.disabled);
+
+    (((n1.value == n2.value) || (n2.value == n3.value) || (n3.value == n1.value)) && ((p1.value == p2.value) || (p2.value == p3.value) || (p3.value == p1.value)) && nonEmpty()!=1) ? btn.disabled = true : btn.disabled = false;
+  }
+  const input = document.querySelectorAll('input');
+  input.forEach((inp) => inp.addEventListener('change', function () {
+    (inp.length != 0) ? repeatChecker(inp) : console.log(inp);
+  }));
+
+</script>
+<script>
+      document.forms["summit-form"].addEventListener("submit", async (event) => {
+          event.preventDefault();
+          document.getElementById('submit-btn').innerText ="Loading..."
+          const resp = await fetch(event.target.action, {
+            method: "POST",
+            body: new URLSearchParams(new FormData(event.target)),
+          });
+          const res = await resp.json();
+          console.log(res);
+          document.getElementById('submit-btn').innerText ="submit"
+          res.Ok ? window.location='user/registered' : alert('Something went wrong. Please try later.')
+        });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
