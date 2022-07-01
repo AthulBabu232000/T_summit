@@ -102,6 +102,24 @@ module.exports = (sequelize, DataTypes) => {
       delegatefourphno: {
         type: DataTypes.STRING,
       },
+      delegatefivename: {
+        type: DataTypes.STRING,
+      },
+      delegatefivemail: {
+        type: DataTypes.STRING,
+      },
+      delegatefivephno: {
+        type: DataTypes.STRING,
+      },
+      delegatesixname: {
+        type: DataTypes.STRING,
+      },
+      delegatesixmail: {
+        type: DataTypes.STRING,
+      },
+      delegatesixphno: {
+        type: DataTypes.STRING,
+      },
     },
     {
       sequelize,

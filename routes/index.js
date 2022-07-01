@@ -29,6 +29,13 @@ router.post('/summitform',function(req,res,next){
   d4Name=req.body.delegatefourname,
   d4Email=req.body.delegatefourmail,
   d4phno=req.body.delegatefourphno;
+  d5Name=req.body.delegatefivename,
+  d5Email=req.body.delegatefivemail,
+  d5phno=req.body.delegatefivephno,
+  d6Name=req.body.delegatesixname,
+  d6Email=req.body.delegatesixmail,
+  d6phno=req.body.delegatesixphno,
+
  
   tsummit.create({
 
@@ -45,7 +52,14 @@ router.post('/summitform',function(req,res,next){
     delegatethreephno:d3phno,
     delegatefourname:d4Name,
     delegatefourmail:d4Email,
-    delegatefourphno:d4phno
+    delegatefourphno:d4phno,
+    delegatefivename:d5Name,
+    delegatefivemail:d5Email,
+    delegatefivephno:d5phno,
+    delegatesixname:d6Name,
+    delegatesixmail:d6Email,
+    delegatesixphno:d6phno,
+
 
   }).then(result=>res.json({ Ok: true }))
     .catch(err=>res.json({ Ok: false }));
