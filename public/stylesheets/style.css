@@ -156,6 +156,15 @@ margin:0 auto;
   content:'IV';
 }
 
+.card-5:before{
+  content:'V';
+}
+
+.card-6:before{
+  content:'VI';
+}
+
+
 label{
   color:#1FA2FF;
   font-weight:500;
